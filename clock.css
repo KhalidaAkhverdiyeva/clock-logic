@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: black;
 }
 
 .container {
@@ -11,7 +12,20 @@
   height: 100vh;
 }
 .clock {
-  border: solid black 1px;
+  border: solid white 1px;
   padding: 20px 40px;
   font-size: 80px;
+  color: white;
+}
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.clock2 {
+  border: solid white 1px;
+  padding: 20px 40px;
+  font-size: 80px;
+  color: white;
 }

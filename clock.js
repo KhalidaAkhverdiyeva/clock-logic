@@ -26,3 +26,36 @@ if(second.textContent < 10 ){
     
 },1000);
 
+let hour2 = 0;
+let minute2 = 0;
+let second2 = 0;
+
+setInterval(updateClock,1000);
+
+function updateClock(){
+
+    document.querySelector('#hour2').textContent =(hour2 < 10 ? '0': '')+ hour2;
+    document.querySelector('#minute2').textContent =(minute2 < 10 ? '0': '')+ minute2;
+    document.querySelector('#second2').textContent =(second2 < 10 ? '0': '')+ second2;
+    second2++
+
+    if (second2 === 60){
+        second2 = 0;
+        minute2++;
+           
+        if (minute2 === 60){
+            minute2 = 0;
+            hour2++ 
+    
+        }
+           
+        if (hour2 === 60){
+            hour2 = 0;
+    
+        }
+    
+     }
+}
+
+
+ 
